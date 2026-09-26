@@ -1,0 +1,392 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* Navbar */
+
+header {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #222;
+}
+
+.logo span {
+    color: #e67e22;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #e67e22;
+}
+
+#menuBtn {
+    display: none;
+
+    background: none;
+    border: none;
+
+    font-size: 25px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff3e6,
+        #ffe0b2
+    );
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.welcome {
+    color: #e67e22;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e67e22;
+}
+
+.hero p {
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.btn,
+.order-btn {
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #e67e22;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #cf6413;
+
+    transform: translateY(-2px);
+}
+
+
+/* General Sections */
+
+section {
+    padding: 80px 20px;
+}
+
+.heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.heading p {
+    color: #e67e22;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.heading h2 {
+    font-size: 35px;
+
+    margin-top: 5px;
+}
+
+
+/* Menu */
+
+.menu {
+    background: #ffffff;
+}
+
+.food-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.food-card {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border-radius: 12px;
+
+    background: #fffaf5;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-7px);
+}
+
+.food-image {
+    font-size: 70px;
+
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+.food-card h4 {
+    color: #e67e22;
+
+    font-size: 22px;
+
+    margin-bottom: 18px;
+}
+
+.order-btn {
+    padding: 10px 20px;
+
+    background: #e67e22;
+
+    color: white;
+}
+
+.order-btn:hover {
+    background: #cf6413;
+}
+
+
+/* About */
+
+.about {
+    background: #fff3e6;
+}
+
+.about-box {
+    max-width: 750px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about-box h3 {
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    margin-bottom: 25px;
+
+    line-height: 1.8;
+}
+
+
+/* Contact */
+
+.contact {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+}
+
+textarea {
+    height: 140px;
+
+    resize: none;
+}
+
+form .btn {
+    width: 150px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #222;
+
+    color: white;
+}
+
+footer h3 {
+    color: #e67e22;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    #menuBtn {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .food-container {
+        grid-template-columns: 1fr;
+    }
+
+}

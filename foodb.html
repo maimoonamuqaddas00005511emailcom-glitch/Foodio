@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie Corner</title>
+
+    <link rel="stylesheet" href="food.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">Foodie<span>Corner</span></h2>
+
+            <button id="menuBtn">☰</button>
+
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="welcome">WELCOME TO FOODIE CORNER</p>
+
+            <h1>Fresh Food, <span>Happy Mood!</span></h1>
+
+            <p>
+                Delicious homemade food prepared with
+                fresh ingredients and lots of love.
+            </p>
+
+            <a href="#menu" class="btn">View Our Menu</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+
+        <div class="heading">
+            <p>OUR SPECIALS</p>
+            <h2>Popular Menu</h2>
+        </div>
+
+
+        <div class="food-container">
+
+            <div class="food-card">
+
+                <div class="food-image">🍔</div>
+
+                <h3>Classic Burger</h3>
+
+                <p>
+                    Juicy burger with fresh vegetables
+                    and special sauce.
+                </p>
+
+                <h4>$5.99</h4>
+
+                <button class="order-btn" onclick="orderFood('Classic Burger')">
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <div class="food-image">🍕</div>
+
+                <h3>Cheese Pizza</h3>
+
+                <p>
+                    Delicious cheesy pizza with
+                    fresh toppings.
+                </p>
+
+                <h4>$8.99</h4>
+
+                <button class="order-btn" onclick="orderFood('Cheese Pizza')">
+                    Order Now
+                </button>
+
+            </div>
+
+
+            <div class="food-card">
+
+                <div class="food-image">🍝</div>
+
+                <h3>Creamy Pasta</h3>
+
+                <p>
+                    Creamy pasta prepared with
+                    our special recipe.
+                </p>
+
+                <h4>$7.99</h4>
+
+                <button class="order-btn" onclick="orderFood('Creamy Pasta')">
+                    Order Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div class="heading">
+            <p>ABOUT US</p>
+            <h2>Why Choose Us?</h2>
+        </div>
+
+        <div class="about-box">
+
+            <h3>Fresh Ingredients & Great Taste</h3>
+
+            <p>
+                At Foodie Corner, we believe good food brings
+                people together. We prepare every meal using
+                fresh ingredients and simple recipes.
+            </p>
+
+            <button class="btn" id="aboutBtn">
+                Learn More
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="heading">
+            <p>CONTACT US</p>
+            <h2>Get In Touch</h2>
+        </div>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>FoodieCorner</h3>
+
+        <p>Fresh Food • Great Taste • Happy Customers</p>
+
+        <p>© 2026 Foodie Corner</p>
+
+    </footer>
+
+
+    <script src="food.js"></script>
+
+</body>
+</html>
